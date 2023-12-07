@@ -1,0 +1,275 @@
+body {
+    background-color:#63bda4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding:0;
+}
+
+.game {
+    width: 300px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    background-color: #d9ffea; /* Adjust color as needed */
+    border-radius: 15%;
+    position: absolute;
+    top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#animateButton {
+	position:absolute;
+	top:3px;
+	left:3px;
+	width:30px;
+	height:30px;
+	background: transparent;
+	border:none;
+	
+
+
+
+}
+#devil img {
+	position:absolute;
+	left:50px;
+	top:90px;
+	height:80px;
+	width:80px;
+	mix-blend-mode: multiply;
+	border-radius:25%;
+}
+
+
+.box {
+	position:absolute;
+	top:0px;
+	background-size:90px 90px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    
+}
+
+
+
+
+
+@keyframes example {
+	0%   { transform: translateY(0); }
+	30%  { transform: translateY(-100px); }
+	50%  { transform: translateY(0); }
+	100% { transform: translateY(0); }
+}
+
+
+#devil {
+  mix-blend-mode:multiply;
+  animation-name: bounce-3;
+  animation-timing-function: ease;
+}
+
+
+
+.obstaculo {
+	position:absolute;
+	top:120px;
+	width:30px;
+	height: 400px;
+	background-image: url(../Jogos/Img/Obstaculo.jpeg);
+	background-size: 30px 40px;
+	background-repeat:no-repeat;
+	mix-blend-mode:multiply;
+	animation: jump 2s infinite linear;
+
+}
+
+
+@keyframes jump{
+    0%{
+        left: 250px;
+    }
+    100%{
+        left: -5px;
+    }
+}
+.piso {
+	position:absolute;
+	top:160px;
+	height:1px;
+	width:100%;
+	background:black;
+
+}
+
+.triangulo {
+  position:absolute;
+  top:320px;
+  right:110px;
+  border-radius:30px;
+  width: 0; 
+  height: 0; 
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 40px solid blue;
+  filter: drop-shadow(7px 5px 0px black);
+  
+}
+.triangulo:active {
+	filter: drop-shadow(0px 0px 0px black);
+	transform:translatey(6px);
+}
+
+.entrada {
+    width: 210px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    background-color: green; /* Adjust color as needed */
+    border-radius: 7%;
+    position: absolute;
+    top: 250px;
+    left:30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.quadrado {
+	border-radius: 100%;
+	position:absolute;
+	box-shadow:3px 6px;
+	top:340px;
+	right: 48px;
+    width: 25px; /* Adjust the width as needed */
+    height: 25px; /* Adjust the height as needed */
+    background-color: #6edd4c; /* You can change the background color */
+}
+.quadrado:active {
+	box-shadow:none;
+	transform:translatey(6px);
+}
+
+.circulo {
+	border-radius: 50px;
+	position:absolute;
+	top:379px;
+	box-shadow:3px 6px;
+	right: 80px;
+    width: 55px; /* Adjust the width as needed */
+    height: 55px; /* Adjust the height as needed */
+    background-color: #f20553; /* You can change the background color */
+}
+.circulo:active {
+	box-shadow:none;
+	transform:translatey(6px);
+}
+.analogico {
+	position:absolute;
+	left:20px;
+	top:-10px;
+}
+
+
+.analogico #centro {
+	border-radius: 5px;
+	position:absolute;
+	top:356px;
+	left: 55px;
+	box-shadow:0px 0px black;
+	width: 29px; /* Adjust the width as needed */
+	height: 29px; /* Adjust the height as needed */
+	background-color: yellow; /* You can change the background color */
+}
+.analogico #centro:active {
+	box-shadow:none;
+	transform:translatey(6px);
+}
+
+.analogico #direita {
+	border-radius: 5px;
+	position:absolute;
+	top:360px;
+	left: 75px;
+	box-shadow:3px 6px black;
+	width: 35px; /* Adjust the width as needed */
+	height: 20px; /* Adjust the height as needed */
+	background-color: yellow; /* You can change the background color */
+}
+.analogico #direita:active {
+	box-shadow:none;
+	transform:translatey(6px);
+}
+.analogico #esquerda {
+	border-radius: 5px;
+	position:absolute;
+	top:360px;
+	left: 30px;
+	box-shadow:3px 6px black;
+	width: 30px; /* Adjust the width as needed */
+	height: 20px; /* Adjust the height as needed */
+	background-color: yellow; /* You can change the background color */
+}
+
+.analogico #esquerda:active {
+	box-shadow:none;
+	transform:translatey(6px);
+}
+
+.analogico #cima {
+	border-radius: 5px;
+	position:absolute;
+	top:330px;
+	left: 60px;
+	box-shadow:3px 6px black;
+	width: 20px; /* Adjust the width as needed */
+	height: 30px; /* Adjust the height as needed */
+	background-color: yellow; /* You can change the background color */
+}
+.analogico #cima:active {
+	box-shadow:none;
+	transform:translatey(6px);
+}
+
+
+.analogico #baixo {
+	border-radius: 5px;
+	position:absolute;
+	top:375px;
+	left: 60px;
+	box-shadow:3px 6px black;
+	width: 20px; /* Adjust the width as needed */
+	height: 35px; /* Adjust the height as needed */
+	background-color: yellow; /* You can change the background color */
+}
+.analogico #baixo:active {
+	box-shadow:none;
+	transform:translatey(6px);
+}
+
+
+
+.som {
+    width: 50px; /* Adjust size as needed */
+    height: 10px; /* Adjust size as needed */
+    background-color: green; /* Adjust color as needed */
+    border-radius: 10%;
+    position: absolute;
+    top: 480px;
+    left:40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.som2 {
+    width: 50px; /* Adjust size as needed */
+    height: 10px; /* Adjust size as needed */
+    background-color: green; /* Adjust color as needed */
+    border-radius: 10%;
+    position: absolute;
+    top: 480px;
+    left:100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+button {
+	background-color:transparent;
+	border:none;
+}
+
+/*×××××××××××××××××××××××××××××××××××××*/
