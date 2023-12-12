@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Flappy Bird</title>
+    <link rel="stylesheet" type="text/css" href="Styles/Game2.css">
 </head>
 <body>
-  <div class="game">
-      <div id="devil" class="obstacleDivSelector">
-      <div class="box bounce-3"><img src="Img/Devil.gif"></div>
-  </div>
-  <div class="ground">
-      <div class="stage"></div>
-  </div>
-  <div id="obstaculo1" class="obstaculo ,obstacleDivSelector">
-  </div>
-  
-  <div class="animating-div"></div>
-	  <div class="piso"></div>
-  </div>
-  <div class="botoes">
-  <div class="circulo"><button id="animateButton"></button></div>
-  </div>
-  <script src="script.js"></script>
+	<div class="bmo">
+		<img src="Img/Sky.gif">
+		<div id="spaceship" class="container">
+			<div class="moving-div" id=".devil"></div>
+			<img src="Img/Nave.gif">
+			
+		</div>
+	</div>
+	<div class="entrada"></div>
+	
+	<div class="botoes">
+	
+	<div class="triangulo"><button id="meuBotao"></button></div>
+	<div class="quadrado"><a href="../menu.html" >.</a></div>
+	<button class="trigger, circulo" id="animateButton"></button>
+	
+	</div>
+	</div>
+	
+	<div class="analogico">
+	<div id="baixo" onclick="move('down')"><button></button></div>
+	<div id="esquerda" onclick="move('left')"></button></div>
+	<div id="cima" onclick="move('up')"><button></button></div>
+	<div id="direita" onclick="move('right')"><button></button></div>
+	<div id="centro"><button></button></div>
+	</div>
+	
+	<div class="som"></div>
+	<div class="som2"></div>
 </body>
+<script src="Scripts/Game2.js"></script>
 </html>

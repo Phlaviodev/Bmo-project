@@ -77,14 +77,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .menu {
-    width: 200px;
+    width: 250px;
     position:absolute;
     top:-40px;
-    left:20px;
+    left:10px;
     margin: 50px auto;
     background-color: #000;
     border: 3px solid #999;
-    border-radius: 5px;
+    border-radius: 15%;
     padding: 10px;
     box-shadow: 0 0 5px #666;
 }

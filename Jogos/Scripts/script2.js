@@ -5,7 +5,7 @@ const jump = () => {
 	setTimeout(() => {
 		devil.classList.remove("jump");
 	},1000);
-	}
+}
 	
 
-document.getElementById("animateButton").addEventListener("click", jump)
+document.getElementById("animateButton").addEventListener("click", jump);
