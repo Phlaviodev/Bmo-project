@@ -1,0 +1,79 @@
+.bmo {
+    width: 300px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    background-color: #C4E1C3; /* Adjust color as needed */
+    border-radius: 15%;
+    position: absolute;
+    overflow:hidden;
+    top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.credits {
+	position:absolute;
+	text-align:center;
+	font-size:10px;
+    animation:credit 25s infinite linear;
+}
+
+@keyframes credit{
+	0%{
+		top:150px;
+		color:transparent;
+		animation-duration:-10s;
+	}
+	50% {
+		top:-365px;
+		color:black;
+	}
+	55%{
+		color:transparent;
+	}
+	60%{
+		color:transparent;
+	}
+	75%{
+		color:transparent;
+	}
+	85% {
+		color:transparent;
+	}
+	100%{
+		color:transparent;
+		
+		}
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+@font-face {
+  font-family: 'Common Pixel';
+  src: url('../Fonts/Pixel_font.ttf') format('truetype');
+}
+a {
+    color: green;
+    font-family: 'Common Pixel';
+    text-decoration: none;
+    display: block;
+}
+
+
+
+a:hover {
+    color: #fff;
+}
+
+/* Pixel font */
+@import url('https://fonts.cdnfonts.com/css/common-pixel');
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+

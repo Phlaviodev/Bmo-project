@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Styles/jogo2.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/styles.css">
+
+</head>
+<body>
+        <div class="corpo">
+
+            <div class="bmo">
+                <img src="Img/Sky.gif">
+                <div id="spaceship" class="container">
+                    <div class="moving-div" id=".devil"></div>
+                    <img src="Img/Nave.gif">
+                    
+                </div>
+            </div>
+            <div class="entrada"></div>
+            <div class="entradabtn"></div>
+    
+            <div class="botoes">
+                <div class="triangulo"><button></button></div>
+                <button class="quadrado" onclick="irParamenu()"></button>
+                <button  class="trigger, circulo" id="animateButton"></button>
+            </div>
+                
+    
+                
+            <div class="analogico">
+                <button id="baixo" onclick="move('down')"></button>
+                <button id="esquerda" onclick="move('left')"></button>
+                <button id="cima" onclick="move('up')"></button>
+                <button id="direita" onclick="move('right')"></button>
+                <button id="centro"></button>
+            </div>
+                
+            <div class="sons">
+                <div class="som"></div>
+                <div class="som2"></div>
+            </div>
+        </div>
+</body>
+<script src="Scripts/script2.js"></script>
+</html>
